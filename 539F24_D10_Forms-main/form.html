@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Form</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+<!-- <form action="" method="post"> Connect to formspree.io-->
+<form
+action="https://formspree.io/f/xpwzpdon"
+method="POST"
+>
+        <fieldset>
+            <legend>Form</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" placeholder="Enter Your First Name" name = "first-name" id="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" placeholder="Enter Your Last Name" name="last-name" id = "last-name" required>
+
+            <label for="program">Program:</label>
+            <input type="text" placeholder="Enter Your Program" name="program" id="program" required>
+
+            <div class="radio-group">
+                <p>Available Time for Drop-In Advising:</p>
+
+                <label for="morning-10">Morning 10:00 AM</label>
+                <input type="radio" id="morning-10" name="available-time" value="morning">
+
+                <label for="afternoon-130">Afternoon 01:30 PM</label>
+                <input type="radio" id="afternoon-130" name="available-time" value="afternoon">
+
+                <label for="afternoon-3">Afternoon 03:00 PM</label>
+                <input type="radio" id="afternoon-3" name="available-time" value="afternoon">
+
+            </div>
+
+            <label for="comments">Briefly Share What You Want To Discuss:</label>
+            <textarea name="comments" id="comments" cols="36" rows="5" placeholder="Enter Your Comments"></textarea>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
